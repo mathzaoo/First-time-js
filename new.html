@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live demo</title>
+</head>
+<body>
+    <input type="number"/>
+     <button onclick="stampa()">  Stampa </button>
+     <DIV>
+
+
+     </DIV>
+
+     <script>
+   function stampa() {
+    // Prendi il valore che è contenuto nel nostro input
+    let numero= document.querySelector ('input').value;
+    // e lo salvi su una variabile 
+    let contenitore= document.querySelector ('div'); // riferimento al tag DIV
+    contenitore.innerHTML= ''; // svuota il contenuto del div
+    // Per ogni numero inferiore a quel valore
+    for (let i= 0; i<numero; i++){
+     contenitore.innerHTML+= 'Sto stampando l\'elemento numero '+i+ '<br>';
+    // stampa il numero 
+
+   
+}
+}
+     </script>
+</body>
+</html>
